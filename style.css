@@ -1,0 +1,280 @@
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background:  #22313f;
+    /*background: #34495e;*/
+
+    display:flex;
+    flex-direction:column;
+}
+a{
+    cursor:pointer;
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+nav{
+    position:fixed;
+    width:100vw;
+    height:9%;
+    font-size:22px;
+    font-weight: 450;
+    background-color: #202e3c;
+    /*background-color: #22313f;*/
+
+    display:flex;
+    flex-direction: row;
+}
+nav > div{
+    width:50%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+}
+nav a{
+    color: #e4f1fe;
+}
+nav a:hover{
+    color:#8dc6ff;
+    transition:0.3s;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li{
+    padding: 0 36px;
+}
+p a[href="index.html"]{
+    padding: 0 0 0 250px;
+}
+
+
+/*MAIN CONTENT*/
+div.main-content{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:row;
+}
+div.main-content > div{
+    height:100%;
+}
+
+/*first section*/
+div.main-content > div:first-child{
+    width:65%;
+    margin: 0 0 0 0;
+
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+div.main-content > div.first-section h1, p, ul{
+    color:#e4f1fe;
+}
+div.main-content > div.first-section p{
+    padding:0 0 0 30px;
+    margin:10px 100px 10px 150px;
+}
+div.main-content  p.titles{
+    font-size:36px;
+}
+div.main-content p.big_text{
+    letter-spacing: 1px;
+    padding:3px;
+}
+div.main-content  p.text{
+    padding:0 3px;
+}
+div.main-content span{
+    color:#8dc6ff;
+    font-size:36px;
+    text-shadow: 0 1px 13px rgba(141, 198, 255, 0.3);
+}
+div.main-content ul{
+    list-style: none;
+    margin:0 0 0 150px;
+}
+div.main-content p.skills{
+    font-size:40px;
+    color:#8dc6ff;
+    font-weight: 600;
+    text-shadow: 0 1px 13px rgba(141, 198, 255, 0.3);
+}
+div.main-content li{
+    padding: 5px 0;
+    font-size:20px;
+    font-weight:600;
+}
+/*button container*/
+div.button-container{
+    margin:15px 0 0 9.3vw;
+    width:200px;
+    height:30px;
+
+    display:flex;
+    flex-direction: row;
+}
+div.button-container > div.button{
+    width:33.33%;
+    height:100%;
+
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+div.button-container i {
+    box-shadow: rgb(141, 198, 255, 0.2) -1px 8px 24px;
+    font-size:25px;
+    padding:10px;
+    border:2px solid #8dc6ff;
+    color:#8dc6ff;
+    border-radius: 50%;
+}
+div.button-container i[class="fa-brands fa-instagram"]{
+    padding: 10px 12px;
+}
+div.button-container > div.button:hover{
+    color:#22313f;
+    transition:0.3s;
+}
+/*more-info*/
+div.more-info{
+    margin:15px 0 0 9.3vw;
+    width:150px;
+    height:30px;
+    border:1px solid #8dc6ff;
+    border-radius: 4px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div.more-info span, a{
+    font-size:22px;
+    text-align:center;
+    color:#e4f1fe;
+}
+div.more-info:hover{
+    background-color: #8dc6ff;
+    transition-duration:0.3s;
+    cursor:pointer;
+}
+
+
+/*second section*/
+div.main-content > .second-section{
+    width:35%;
+}
+div.main-content > .second-section > p{
+    padding:0;
+    margin:0;
+}
+div.main-content > .second-section img[class="Stefan"]{
+    margin:17vh 0;
+    height:65%;
+    box-shadow: rgba(141, 198, 255, 0.5) 0 7px 29px 0;
+    border-radius:12px;
+}
+/*second section ABOUT*/
+div.second-section > div{
+    width:100%;
+    height:14%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.images:nth-child(1) > img{
+    margin-left:0;
+}
+div.images:nth-child(2) > img{
+    margin-left:50px;
+}
+div.images:nth-child(3) > img{
+    margin-left:100px;
+}
+div.images:nth-child(4) > img{
+    margin-left:150px;
+}
+div.images:nth-child(5) > img{
+    margin-left:200px;
+}
+div.images:nth-child(6) > img{
+    margin-left:250px;
+}
+div.second-section > div.first-container{
+    margin-top:100px;
+}
+div.second-section > div > img{
+    height:90%;
+}
+/*EDUCATION*/
+div.main-content p.date{
+    margin:0;
+    padding:0;
+}
+div.main-content  span.education{
+    font-size:50px;
+}
+div.education-holder{
+    width:100%;
+    height:125px;
+
+    display:flex;
+    flex-direction:column;
+}
+hr{
+    width:70%;
+    margin:0 175px;
+}
+div.second-section > div.image_container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div.second-section  img[src^="Logo_FINKI"]{
+    height:40%;
+}
+/*CONTACT*/
+div.main-content > div.contact-container{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+div.contact-container > div.button{
+    width:22%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+div.contact-container i {
+    box-shadow: rgb(141, 198, 255, 0.2) -1px 8px 24px;
+    font-size:60px;
+    padding:10px;
+    border:2px solid #8dc6ff;
+    color:#8dc6ff;
+    border-radius: 50%;
+}
+div.contact-container i[class="fa-brands fa-instagram"]{
+    padding: 10px 12px;
+}
+div.contact-container > div.button:hover{
+    color:#22313f;
+    transition:0.3s;
+}
